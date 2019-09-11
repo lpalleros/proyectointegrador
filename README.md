@@ -8,3 +8,5 @@ El cliente pide contar con una sección con al menos 8 preguntas frecuentes refe
 El cliente pide que se pueda navegar el sitio entre las 4 páginas de manera fluida.
 El cliente pide que el estilo del sitio sea común a las 4 páginas.
 El cliente pide que las páginas se vean de forma cómoda en dispositivos móviles. (editado) 
+
+https://xd.adobe.com/view/abff781a-e982-4def-531e-7e27340024e0-ddce/screen/584e414a-576f-49d9-b396-ae764641fc52/ENTRAR?fullscreen
