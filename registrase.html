@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Registro</title>
+  </head>
+  <body>
+    <div class="row container-registro">
+      <div class="col-lg-6 col-sm-12 registro">
+        <form class="formulario-de-registro" method="post">
+          <h2>REGISTRO</h2>
+          <label for="name">Nombre completo</label>
+          <input id="name" type="text" name="name">
+          <label for="email">Email</label>
+          <input id="email" type="email" name="email">
+          <label for="password">Clave</label>
+          <input id="password" type="password" name="password">
+          <div>
+              <input id="ofertas"type="checkbox" name="ofertas">
+              <label for="ofertas">Deseo recibir ofertas y novedades</label>
+          </div>
+          <button type="submit" name="button">ENVIAR</button>
+        </form>
+      </div>
+      <div class="col-lg-6 d-none d-sm-block imagen-lateral"></div>
+    </div>
+  </body>
+</html>
