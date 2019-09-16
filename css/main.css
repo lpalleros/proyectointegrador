@@ -1,11 +1,54 @@
-body {
-background-color:  bue;
+body{
+background-color:  #e8d8be;
 margin: 0;
 padding: 0;
 }
+
+header,footer{
+  height: 100px;
+  background-color: #3A3539;
+}
+.container-fluid{
+  _background-color: red;
+}
+
+/* HOME */
+.portadaHome{
+  background-image: url("../img/home1.png") ;
+  height: 90vh;
+  background-size: cover;
+  background-image: no-repeat;
+  _display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+.bienvenidaHome{
+  background-color: rgba(255, 255, 255, 0.719);
+  text-align: center;
+  
+}
+
+.listArticulos{
+  margin-bottom: 50px;
+  _flex-wrap: wrap;
+  height: 400px;
+  _background-color: white;
+  background-image: url("../img/home-caja-3.png");
+  background-size: cover;
+  background-image: no-repeat;
+  
+}
+
+.newslater{
+  background-image: url("../img/newslater.png");
+  background-size: cover;
+  background-image: no-repeat;
+  height: 200px;
+  margin-bottom: 50px;
+}
+
 .container-registro {
     background-color: bue;
-
 }
 /* REGISTRO  */
 .registro {
