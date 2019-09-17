@@ -18,8 +18,9 @@ header,footer{
   height: 90vh;
   background-size: cover;
   background-image: no-repeat;
-  _display: flex;
+  display: flex;
   justify-content: center;
+  align-items: center;
   margin-bottom: 50px;
 }
 .bienvenidaHome{
@@ -28,10 +29,34 @@ header,footer{
   
 }
 
+.imagenesProductos article{
+  padding-bottom: 30px;
+  padding-left: 30px;
+}
+
+.promoDelMes{
+  display: flex;
+  justify-content: center;
+	align-items: center;
+}
+.promoDelMes h2{
+  color: #e8d8be;
+  text-align: center;
+}
+
+.promoDelMes a{
+  color: #e8d8be;
+  text-align: center;
+  
+}
+
 .listArticulos{
+  margin-top: 50px;
   margin-bottom: 50px;
+  padding-top: 50px;
+  padding-bottom: 20px;
   _flex-wrap: wrap;
-  height: 400px;
+  _height: 400px;
   _background-color: white;
   background-image: url("../img/home-caja-3.png");
   background-size: cover;
