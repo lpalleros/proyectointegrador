@@ -1,22 +1,22 @@
 @font-face {
   font-family:futurabook;
-  src:url(FUENTES/FuturaBookfont.ttf);
+  src:url(../FUENTES/FuturaBookfont.ttf);
 }
 @font-face {
   font-family:futuraheavy;
-  src:url(FUENTES/FuturaHeavyfont.ttf);
+  src:url(../FUENTES/FuturaHeavyfont.ttf);
 }
 @font-face {
   font-family:futuramedium;
-  src:url(FUENTES/futuramediumbt.ttf);
+  src:url(../FUENTES/futuramediumbt.ttf);
 }
 @font-face {
   font-family:futuramediumc;
-  src:url(FUENTES/futuramediumcondensedbt.ttf);
+  src:url(../FUENTES/futuramediumcondensedbt.ttf);
 }
 @font-face {
   font-family:futuralightc;
-  src:url(FUENTES/Futura-CondensedLight.otf);
+  src:url(../FUENTES/Futura-CondensedLight.otf);
 }
 
 body {
@@ -36,7 +36,7 @@ header,footer{
 
 /* HOME */
 .portadaHome{
-  background-image: url("../img/home1.png") ;
+  background-image: url("../IMAGENES/HOME1.png") ;
   height: 90vh;
   background-size: cover;
   background-image: no-repeat;
@@ -80,14 +80,14 @@ header,footer{
   _flex-wrap: wrap;
   _height: 400px;
   _background-color: white;
-  background-image: url("../img/home-caja-3.png");
+  background-image: url("../IMAGENES/HOMECAJAPRODUCTOS.png");
   background-size: cover;
   background-image: no-repeat;
 
 }
 
 .newslater{
-  background-image: url("../img/newslater.png");
+  background-image: url("../IMAGENES/NEWSLATER.png");
   background-size: cover;
   background-image: no-repeat;
   height: 200px;
@@ -98,9 +98,7 @@ header,footer{
 <<<<<<< HEAD:main.css
     background-color: #E8D8BE;
 
-=======
-    background-color: bue;
->>>>>>> master:css/main.css
+
 }
 
 /* REGISTRO  */
@@ -138,7 +136,7 @@ input{
   max-width: 100%;
   height: 700px;
   max-height: 100vh;
-  background-image: url('IMAGENES/REGISTRARSE.png');
+  background-image: url('../IMAGENES/REGISTRARSE.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -176,7 +174,7 @@ text-decoration: underline;
   max-width: 100%;
   height: 700px;
   max-height: 100vh;
-  background-image: url('IMAGENES/ENTRAR.png');
+  background-image: url('../IMAGENES/ENTRAR.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
