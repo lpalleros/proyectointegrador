@@ -1,0 +1,115 @@
+body{
+background-color:  #e8d8be;
+margin: 0;
+padding: 0;
+}
+
+header,footer{
+  height: 100px;
+  background-color: #3A3539;
+}
+.container-fluid{
+  _background-color: red;
+}
+
+/* HOME */
+.portadaHome{
+  background-image: url("../img/home1.png") ;
+  height: 90vh;
+  background-size: cover;
+  background-image: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+}
+.bienvenidaHome{
+  background-color: rgba(255, 255, 255, 0.719);
+  text-align: center;
+  
+}
+
+.imagenesProductos article{
+  padding-bottom: 30px;
+  padding-left: 30px;
+}
+
+.promoDelMes{
+  display: flex;
+  justify-content: center;
+	align-items: center;
+}
+.promoDelMes h2{
+  color: #e8d8be;
+  text-align: center;
+}
+
+.promoDelMes a{
+  color: #e8d8be;
+  text-align: center;
+  
+}
+
+.listArticulos{
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding-top: 50px;
+  padding-bottom: 20px;
+  _flex-wrap: wrap;
+  _height: 400px;
+  _background-color: white;
+  background-image: url("../img/home-caja-3.png");
+  background-size: cover;
+  background-image: no-repeat;
+  
+}
+
+.newslater{
+  background-image: url("../img/newslater.png");
+  background-size: cover;
+  background-image: no-repeat;
+  height: 200px;
+  margin-bottom: 50px;
+}
+
+.container-registro {
+    background-color: bue;
+}
+/* REGISTRO  */
+.registro {
+  background-color: rd;
+}
+
+/* Fomulario*/
+.formulario-de-registro {
+  width: 80%;
+  height: 700px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 20px;
+  margin: 0 auto;
+  max-height: 100vh;
+}
+input{
+    outline-style: none;
+    border: none;
+    border-bottom: 1px solid #000;
+}
+
+
+/* IMAGEN LATERAL*/
+.imagen-lateral {
+  max-width: 100%;
+  background-color: geen;
+  height: 700px;
+  max-height: 100vh;
+  background-image: url('./img/registro-lateral1.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
