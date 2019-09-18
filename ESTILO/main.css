@@ -26,7 +26,7 @@ padding: 0;
 color:#3A3539;
 }
 
-header,footer{
+header{
   height: 100px;
   background-color: #3A3539;
 }
@@ -106,7 +106,21 @@ header,footer{
   background-color: #E8D8BE;
 }
 
+<<<<<<< Updated upstream:ESTILO/main.css
 /* REGISTRO Fomulario*/
+=======
+footer{
+  padding-top: 20px;
+  background-color: #3A3539;
+}
+
+footer li, footer ul{
+  list-style:none;
+  padding: 0%;
+}
+
+/* Fomulario*/
+>>>>>>> Stashed changes:css/main.css
 .formulario-de-registro {
   width: 80%;
   height: 700px;
