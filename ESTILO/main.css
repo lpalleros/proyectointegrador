@@ -120,7 +120,7 @@ footer li, footer ul{
 }
 
 /* Fomulario*/
->>>>>>> Stashed changes:css/main.css
+
 .formulario-de-registro {
   width: 80%;
   height: 700px;
@@ -220,4 +220,34 @@ text-decoration: underline;
   font-size: 36px;
   text-align: center;
   padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+/*FOOTER*/
+footer{
+  padding-top: 25px;
+  padding-bottom: 25px;
+  background-color: #3A3539;
+  color: #E8D8BE;
+}
+footer .listas h5{
+  font-family: futuralightc;
+  font-size: 30px;
+  padding-left: 50px;
+  padding-top: 10px;
+}
+footer .listas ul li a{
+  color: #E8D8BE;
+  text-decoration: none;
+  font-family: futuralightc;
+  padding-left: 50px;
+}
+footer .logo h5{
+  font-family: futuraheavy;
+  font-size: 30px;
+  padding-top: 20px;
+}
+footer .logo p{
+  font-family: futurabook;
+  font-size: 18px;
 }
