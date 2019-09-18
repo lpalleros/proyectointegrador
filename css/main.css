@@ -1,0 +1,211 @@
+@font-face {
+  font-family:futurabook;
+  src:url(FUENTES/FuturaBookfont.ttf);
+}
+@font-face {
+  font-family:futuraheavy;
+  src:url(FUENTES/FuturaHeavyfont.ttf);
+}
+@font-face {
+  font-family:futuramedium;
+  src:url(FUENTES/futuramediumbt.ttf);
+}
+@font-face {
+  font-family:futuramediumc;
+  src:url(FUENTES/futuramediumcondensedbt.ttf);
+}
+@font-face {
+  font-family:futuralightc;
+  src:url(FUENTES/Futura-CondensedLight.otf);
+}
+
+body {
+background-color:   #e8d8be;
+margin: 0;
+padding: 0;
+color:#3A3539;
+}
+
+header,footer{
+  height: 100px;
+  background-color: #3A3539;
+}
+.container-fluid{
+  _background-color: red;
+}
+
+/* HOME */
+.portadaHome{
+  background-image: url("../img/home1.png") ;
+  height: 90vh;
+  background-size: cover;
+  background-image: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+}
+.bienvenidaHome{
+  background-color: rgba(255, 255, 255, 0.719);
+  text-align: center;
+
+}
+
+.imagenesProductos article{
+  padding-bottom: 30px;
+  padding-left: 30px;
+}
+
+.promoDelMes{
+  display: flex;
+  justify-content: center;
+	align-items: center;
+}
+.promoDelMes h2{
+  color: #e8d8be;
+  text-align: center;
+}
+
+.promoDelMes a{
+  color: #e8d8be;
+  text-align: center;
+
+}
+
+.listArticulos{
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding-top: 50px;
+  padding-bottom: 20px;
+  _flex-wrap: wrap;
+  _height: 400px;
+  _background-color: white;
+  background-image: url("../img/home-caja-3.png");
+  background-size: cover;
+  background-image: no-repeat;
+
+}
+
+.newslater{
+  background-image: url("../img/newslater.png");
+  background-size: cover;
+  background-image: no-repeat;
+  height: 200px;
+  margin-bottom: 50px;
+}
+
+.container-registro {
+<<<<<<< HEAD:main.css
+    background-color: #E8D8BE;
+
+=======
+    background-color: bue;
+>>>>>>> master:css/main.css
+}
+
+/* REGISTRO  */
+.registro {
+  background-color: #E8D8BE;
+}
+
+/* REGISTRO Fomulario*/
+.formulario-de-registro {
+  width: 80%;
+  height: 700px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 20px;
+  margin: 0 auto;
+  max-height: 100vh;
+  color:#3A3539;
+}
+h2{
+  font-family:futuraheavy;
+}
+label{
+  font-family: futurabook;
+}
+input{
+    outline-style: none;
+    border: none;
+    border-bottom: 1px solid #EF3E3A;
+    background-color: #E8D8BE;
+}
+
+/*REGISTRO IMAGEN LATERAL*/
+.imagen-lateral {
+  max-width: 100%;
+  height: 700px;
+  max-height: 100vh;
+  background-image: url('IMAGENES/REGISTRARSE.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/*BOTONES LOGIN Y REGISTRO*/
+.button{
+  background-color: #3A3539;
+  border-radius: 10px;
+  display: flex;
+  width:20%;
+  height: 50px;
+  justify-content: center;
+  padding-top: 12px;
+}
+.button a{
+  color:#E8D8BE;
+  text-decoration: none;
+  font-size: 18px;
+  font-family: futurabook;
+}
+.FORGOTPASS a{
+font-family: futurabook;
+color: #3A3539;
+text-decoration: underline;
+}
+
+/*LOGIN*/
+/*LOGIN IMAGEN LATERAL*/
+.imagen-lateral-inicio{
+  max-width: 100%;
+  height: 700px;
+  max-height: 100vh;
+  background-image: url('IMAGENES/ENTRAR.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+/*FAQ*/
+.container-fluid{
+  background-color: #E8D8BE
+}
+#imagenFaq{
+  display: flex;
+  width: 100%;
+}
+.container-fluid h2{
+  padding-top: 60px;
+  padding-bottom: 60px;
+  text-align: center;
+}
+.container-fluid h3, .container-fluid p{
+  font-family: futuramedium;
+  text-align: left;
+}
+.container-fluid h3{
+  padding-top: 15px;
+}
+.dudas p{
+  color:#EF3E3A;
+  font-family: futuralightc;
+  font-size: 36px;
+  text-align: center;
+  padding-top: 60px;
+}
