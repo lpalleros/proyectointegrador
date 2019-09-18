@@ -114,10 +114,21 @@ footer{
   background-color: #3A3539;
 }
 
-footer li, footer ul{
+footer li, footer ul, footer a{
   list-style:none;
   padding: 0%;
+  text-decoration: none;
+  color: #E8D8BE;
 }
+
+
+footer li:hover, footer ul:hover, footer a:hover{
+  list-style:none;
+  padding: 0%;
+  text-decoration: none;
+  color: #E8D8BE;
+}
+
 
 /* Fomulario*/
 
