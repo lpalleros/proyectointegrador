@@ -26,6 +26,26 @@ padding: 0;
 color:#3A3539;
 }
 
+nav {
+  text-align: center;
+  color: #E8D8BE!important;
+}
+nav a{
+  text-align: center;
+  color: #E8D8BE!important;
+  font-family:futuralightc;
+  font-size: 25px;
+}
+.navbar-toggler {
+  background-color: #3A3539!important;
+}
+.bg-dark {
+  background-color: #3A3539!important;
+}
+.navbar-dark {
+  background-color: #3A3539!important;
+}
+
 header{
   height: 100px;
   background-color: #3A3539;
