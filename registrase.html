@@ -1,109 +1,104 @@
 <!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Rollin - Home</title>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="ESTILO/main.css">
-</head>
-<body>
-  <!-- NAVBAR  -->
-    <nav class="navbar navbar-expand-md bg-dark navbar-dark navbar-toggleable-md ">
-      <div class="container">
-        <a class="navbar-brand" href="index.html">
-          <img src="IMAGENES/LOGO FONDO TRANSPARENTE.png" width="120px" id="logo">
-        </a>
-        <button class="navbar-toggler navbar-toggler" type="button" data-toggle="collapse" data-target="#Content" aria-controls="Content" aria-expanded="false" aria-label="Toggle navigation" id="toggleButton">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse " id="Content" >
-          <ul class="nav navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="login.html">Entrar</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="registrase.html">Registrarse</a>
-            </li>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
 
-            <li class="nav-item">
-              <a class="nav-link" href="faq.html" >FAQs</a>
-            </li>
-          </ul>
-          <ul class="nav navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="#">
-                <img src="IMAGENES/VECTOR MOCHILA.png" width="30px" id="logo">
-              </a>
-            </li>
-          </ul>
+    <title>Registro</title>
+  </head>
+  <body>
+    <!-- NAVBAR  -->
+      <nav class="navbar navbar-expand-md bg-dark navbar-dark navbar-toggleable-md ">
+        <div class="container">
+          <a class="navbar-brand" href="index.html">
+            <img src="IMAGENES/LOGO FONDO TRANSPARENTE.png" width="120px" id="logo">
+          </a>
+          <button class="navbar-toggler navbar-toggler" type="button" data-toggle="collapse" data-target="#Content" aria-controls="Content" aria-expanded="false" aria-label="Toggle navigation" id="toggleButton">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse " id="Content" >
+            <ul class="nav navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="login.html">Entrar</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Registrarse</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="faq.html" >FAQs</a>
+              </li>
+            </ul>
+            <ul class="nav navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <img src="IMAGENES/VECTOR MOCHILA.png" width="30px" id="logo">
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
+      </nav>
+      <!-- FINAL DEL NAVBAR  -->
+    <div class="row container-registro">
+      <div class="col-lg-6 col-sm-12 registro">
+        <form class="formulario-de-registro" method="post">
+          <h2>REGISTRO</h2>
+          <br>
+          <label for="name">Nombre completo</label>
+          <input id="name" type="text" name="name">
+          <br>
+          <label for="email">Email</label>
+          <input id="email" type="email" name="email">
+          <br>
+          <label for="password">Clave</label>
+          <input id="password" type="password" name="password">
+          <br>
+          <div>
+              <input id="ofertas"type="checkbox" name="ofertas">
+              <label for="ofertas">Deseo recibir ofertas y novedades</label>
+          </div>
+          <br>
+          <div class="button">
+            <a href="#">ENVIAR</a>
+          </div>
+        </form>
       </div>
-    </nav>
-    <!-- FINAL DEL NAVBAR  -->
-
-    <!--
-    <header>
-
-    </header>
-    -->
-    <div class="container-fluid">
-        <div class="row portadaHome">
-            <div class="col-md-12 bienvenidaHome">
-                <h2>¡CONOCÉ NUESTROS MONOPATINES!</h2>
-            </div>
-        </div>
-        <div class="row listArticulos">
-            <section class="imagenesProductos col-lg-7 col-xs-12  row">
-             <article class="col-lg-6 col-xs-12">
-                 <img src="IMAGENES\1.png" width="100%" alt="">
-             </article>
-             <article class="col-lg-6 col-xs-12">
-                <img src="IMAGENES\2.png" width="100%" alt="">
-             </article>
-             <article class="col-lg-6 col-xs-12">
-                <img src="IMAGENES\3.png" width="100%" alt="">
-             </article>
-             <article class="col-lg-6 col-xs-12">
-                <img src="IMAGENES\4.png" width="100%" alt="">
-             </article>
-            </section>
-            <section class="promoDelMes col-md-5  col-xs-12 row">
-                <h2 class="col-12">20% OFF EN TODO EL SITIO!</h2>
-                <a class="col-12" href="#">IR A LA TIENDA</a>
-            </section>
-
-        </div>
+      <div class="col-lg-6 d-none d-sm-block imagen-lateral"></div>
     </div>
 
+
+
     <footer class="row">
-        <section class="col-md-7 col-xs-12  row listas">
-            <article class="col-md-2">
-                <a href="#"><h5>Tienda</h5></a>
-                <ul>
-                    <li><a href="#">Monopatines</a></li>
-                    <li><a href="#">Accesorios</a></li>
-                </ul>
-            </article>
-            <article class="col-md-2">
-                <a href="faq.html"><h5>Faq</h5></a>
-            </article>
+      <section class="col-md-7 col-xs-12  row listas">
+          <article class="col-md-2">
+              <a href="#"><h5>Tienda</h5></a>
+              <ul>
+                  <li><a href="#">Monopatines</a></li>
+                  <li><a href="#">Accesorios</a></li>
+              </ul>
+          </article>
+          <article class="col-md-2">
+              <a href="faq.html"><h5>Faq</h5></a>
+          </article>
 
-            <article class="col-md-2">
-                <a href="mailto:contacto@rollin.com"><h5>Contacto</h5></a>
-            </article>
-        </section>
-        <section class="col-md-5  col-xs-12 row logo">
-            <article class="col-12">
-                <a href="index.html"><h5 style="text-align: right">ROLLIN'</h5></a>
-                <a href="https://goo.gl/maps/x6Stu22dYpuu1bjT8" target="_blank"><p style="text-align: right">Av. Lorem Ipsum Dolor 2563 - Winterfeld - Narnia</p></a>
-            </article>
-        </section>
+          <article class="col-md-2">
+              <a href="mailto:contacto@rollin.com"><h5>Contacto</h5></a>
+          </article>
+      </section>
+      <section class="col-md-5  col-xs-12 row logo">
+          <article class="col-12">
+              <a href="index.html"><h5 style="text-align: right">ROLLIN'</h5></a>
+              <a href="https://goo.gl/maps/x6Stu22dYpuu1bjT8" target="_blank"><p style="text-align: right">Av. Lorem Ipsum Dolor 2563 - Winterfeld - Narnia</p></a>
+          </article>
+      </section>
 
-    </footer>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-</body>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
 </html>
