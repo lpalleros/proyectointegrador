@@ -124,7 +124,7 @@ header{
   _margin-top: 50px;
   margin-bottom: 50px;
   padding-top: 50px;
-  padding-bottom: 70px;
+  padding-bottom: 20px;
   _flex-wrap: wrap;
   _height: 400px;
   _background-color: white;
@@ -150,7 +150,7 @@ header{
 .formularioNews{
   display: flex;
   justify-content: center;
-	align-items: center;
+  align-items: center;
 }
 
 .formularioNews button{
@@ -358,5 +358,8 @@ footer .logo p{
   .listArticulos{
     display: flex;
     flex-direction: column-reverse;
+  }
+  .formularioNews{
+    margin-bottom: 30px;
   }
 }
