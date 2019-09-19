@@ -84,19 +84,47 @@ header{
 .promoDelMes h2{
   color: #e8d8be;
   text-align: center;
+  font-size:3em;
+  font-family:futuraheavy;
+  font-weight: bold;
 }
 
-.promoDelMes a{
-  color: #e8d8be;
-  text-align: center;
 
+.promoDelMes a{
+  color: #3A3539;
+  text-align: center;
+  font-size: 3em;
+  font-family: futuralightc;
+  text-decoration: none;
+  text-shadow: 2px 2px 2px #EF3E3A;
+}
+
+.botonLinkSecundario{
+  background-color: #E8D8BE;
+  border-radius: 10px;
+  margin-bottom: 50px;
+}
+
+.botonLinkPrimario{
+  background-color: #3A3539;
+  border-radius: 10px;
+  margin-bottom: 50px;
+}
+
+.botonLinkPrimario a{
+  color: #E8D8BE;
+  text-align: center;
+  font-size: 3em;
+  font-family: futuralightc;
+  text-decoration: none;
+  text-shadow: 2px 2px 2px #EF3E3A;
 }
 
 .listArticulos{
-  margin-top: 50px;
+  _margin-top: 50px;
   margin-bottom: 50px;
   padding-top: 50px;
-  padding-bottom: 20px;
+  padding-bottom: 70px;
   _flex-wrap: wrap;
   _height: 400px;
   _background-color: white;
@@ -106,12 +134,42 @@ header{
 
 }
 
+
+
 .newslater{
+  _margin-top: 25px;
+  margin-bottom: 50px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   background-image: url("../IMAGENES/NEWSLATER.png");
   background-size: cover;
   background-image: no-repeat;
-  height: 200px;
-  margin-bottom: 50px;
+  _height: 200px;
+}
+
+.formularioNews{
+  display: flex;
+  justify-content: center;
+	align-items: center;
+}
+
+.formularioNews button{
+  background-color: #E8D8BE;
+  border-radius: 10px;
+  color: #3A3539;
+  text-align: center;
+  font-size: 1em;
+  font-family: futuralightc;
+  text-decoration: none;
+  text-shadow: 2px 2px 2px #EF3E3A;
+  
+}
+
+.newslater h2{
+  color: #E8D8BE;
+  text-align: left;
+  padding-top:20px !important;
+  padding-bottom: 20px !important;
 }
 
 .container-registro {
@@ -277,8 +335,28 @@ footer .logo h5{
   font-family: futuraheavy;
   font-size: 30px;
   padding-top: 20px;
+  text-align: right
 }
 footer .logo p{
   font-family: futurabook;
   font-size: 18px;
+  text-align: right;
+}
+
+
+@media (max-width: 768px) {
+  footer h5, footer .logo p, footer .logo h5, footer .listas ul li, footer a{
+    text-align: center;
+  }
+  footer .listas ul li a{
+    padding-left: 0px !important;
+  }
+  footer .listas h5{
+    padding-left: 0px;
+  }
+
+  .listArticulos{
+    display: flex;
+    flex-direction: column-reverse;
+  }
 }
