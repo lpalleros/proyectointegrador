@@ -9,6 +9,8 @@ $errorNombre = "";
 $errorMail ="";
 $errorUser="";
 $errorPassword="";
+$errorFoto="";
+$errorExtension="";
 //para sumar los errores tengo esta variable
 $error = 0;
 
@@ -41,7 +43,7 @@ if ($_POST) {
         $errorUser = "Ingrese un Nombre de Usuario";
         $error++;
       }
-    //Ver este error, cuando escribo menos de 4 caraceteres tira el error pero no puedo hacer que aparezca en el placeholder en vez de los caracteres que puse y se guardaron
+
       else if (strlen($_POST["user"]) < 4) {
         $errorUser = "El usuario debe tener al menos 4 caracteres";
         $error++;
@@ -56,6 +58,24 @@ if ($_POST) {
         $error++;
       }
       else{ $pass = password_hash($_POST["password"], PASSWORD_DEFAULT);
+      }
+    }
+    //VALIDACION FOTO y Subida
+    if ($_FILES) {
+      if ($_FILES["foto"]["error"]!= 0) {
+        $errorFoto = "Hubo un error al cargar la Foto";
+        $error++;
+      }
+      else {
+        $ext = pathinfo($_FILES["foto"]["name"],PATHINFO_EXTENSION);
+
+        if($ext!= "jpg" && $ext != "jpeg" && !$ext != "png"){
+          $errorExtension = "El formato de la Foto debe ser PNG, JPEG o JPG";
+          $error++;
+        }
+        else {
+          move_uploaded_file($_FILES["foto"]["tmp_name"],"archivos/".$_POST["name"].".".$ext);
+        }
       }
     }
         //CReacion de usuario nuevo
@@ -144,28 +164,34 @@ if ($_POST) {
        <!-- FINAL DEL NAVBAR  -->
      <div class="row container-registro">
        <div class="col-lg-6 col-sm-12 registro">
-         <form class="formulario-de-registro" method="POST" action="registro.php">
+         <form class="formulario-de-registro" method="POST" action="registro.php" enctype="multipart/form-data">
            <h2>REGISTRO</h2>
            <br>
            <label for="name">Nombre completo</label>
            <input id="name" type="text" name="name" value="<?=$nombre?>"placeholder="">
            <br>
-           <span style="color:red;font-size:10px"><?=$errorNombre?></span>
+           <span class="error"><?=$errorNombre?></span>
            <br>
            <label for="user">Nombre de Usuario</label>
            <input id="user" type="text" name="user" value="<?=$user?>" placeholder="">
            <br>
-           <span style="color:red;font-size:10px"><?=$errorUser?></span>
+           <span class="error"><?=$errorUser?></span>
            <br>
            <label for="email">Email</label>
            <input id="email" type="email" name="email" value="<?=$email?>"placeholder="">
            <br>
-           <span style="color:red;font-size:10px"><?=$errorMail?></span>
+           <span class="error" ><?=$errorMail?></span>
+           <br>
+           <div class="">
+             <label for="foto">Foto</label>
+             <input id="foto" type="file" name="foto" value="">
+           </div>
+           <span class="error"><?=$errorFoto?><?=$errorExtension?></span>
            <br>
            <label for="password">Clave</label>
-           <input id="password" type="password" name="password" placeholder="<?=$errorPassword?>">
+           <input id="password" type="password" name="password" placeholder="">
            <br>
-           <span style="color:red;font-size:10px"><?=$errorPassword?></span>
+           <span class="error"><?=$errorPassword?></span>
            <br>
            <label for="">Confirmar Clave</label>
            <input id="password_confirm" type="password" name="password_confirm" placeholder="">

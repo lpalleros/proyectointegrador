@@ -233,7 +233,11 @@ input{
     border-bottom: 1px solid #EF3E3A;
     background-color: #E8D8BE;
 }
-
+/* NO FUNCIONA */
+.error span{
+  font-size: 10px;
+  color: red;
+}
 /*REGISTRO IMAGEN LATERAL*/
 .imagen-lateral {
   max-width: 100%;
