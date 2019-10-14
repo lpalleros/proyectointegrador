@@ -5,33 +5,41 @@ if(isset($_COOKIE["username"])){
     $_SESSION["username"] = $_COOKIE["username"];
     header("Location:index.php");
 }
+$email = "";
+$password = "";
 $usuariosEnJSON = file_get_contents("usuarios.json");
 $usuarios = json_decode($usuariosEnJSON,true);
 if($_POST){
-//  echo "<h1>Se envió un formulario</h1>";
-  // preguntar por usuarios
-  //$usuariosEnJSON = file_get_contents("usuarios.json");
-  //$usuarios = json_decode($usuariosEnJSON,true);
+  // persistencia de los datos ingresados por el usuario.
+  $email = $_POST["email"];
+  $password = $_POST["password"];
 
-  // PEDIR INFORMACIÓN POR POST NOMBRE Y CORREO:
-  //$mensaje = " <h2>Aquí esta el correo del usuario</h2> ";
-  //echo $mensaje."<h2>".$_POST["email"]."</h2>";
+  // validaciones en caso de ingresar un campo vacio.
+  if($_POST["email"] == "") {
+    $error[0] = "alert alert-danger";
+  }
+  if ($_POST["password"] == "") {
+    $error[1] = "alert alert-danger";
+  }
 
+
+  // pido el correo que ingreso el usuario y lo guardo en la variable.
   $correoDelUsuario = $_POST["email"];
+
+
   if($_POST["recordarme"] != null){
       setCookie("username",$_POST["username"]);
     }
+// recorro el array desde el archivo json para buscar un usuario registrado.
   foreach ($usuarios as $usuario) {
     if ($correoDelUsuario == $usuario["email"]) {
       echo "<h2>Encontré un correo que coincide</h2>";
       if (password_verify($_POST["password"],$usuario["password"])) {
         $_SESSION["username"] = $usuario["nombre"];
-
-
-
         header("Location:index.php");
       } else {
         echo "<h2>La contraseña NO coincide con el usuario.</h2>";
+
       }
     }
   }
@@ -60,10 +68,10 @@ include_once("nav.php");
           <h2>INICIAR SESIÓN</h2>
           <br>
           <label for="email">Email</label>
-          <input id="email" type="email" name="email">
+          <input id="email" type="email" name="email" class="<?=$error[0]?>" value="<?=$email?>">
           <br>
           <label for="password">Clave</label>
-          <input id="password" type="password" name="password">
+          <input id="password" type="password" name="password" class="<?=$error[1]?>" value="<?=$password?>">
           <br>
           <div class="checkbox-recordarme">
               <input id="recordarme"type="checkbox" name="recordarme">
@@ -112,3 +120,4 @@ include_once("nav.php");
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   </body>
 </html>
+
