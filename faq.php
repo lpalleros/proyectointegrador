@@ -19,7 +19,7 @@ include_once("nav.php");
 
     <div class="container-fluid">
         <div class="row preguntasFaq">
-            <img id="imagenFaq" class="col-12" src="IMAGENES\FAQ.png" alt="">
+            <img id="imagenFaq" class="" src="IMAGENES\FAQ.png" alt="">
 
             <h2 class="col-12">PREGUNTAS FRECUENTES</h2>
             <h3 class="offset-1 col-11">CÓMO COMPRO UN PRODUCTO?</h3>

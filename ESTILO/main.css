@@ -315,7 +315,7 @@ input, textarea{
     border-bottom: 1px solid #EF3E3A;
     background-color: #E8D8BE;
 }
-/* NO FUNCIONA */
+
 .error {
   font-size: 10px;
   color: red;
@@ -335,15 +335,60 @@ img {
   height: auto;
 }
 
+
+/*BOTON FILES*/
+#foto{
+   width: 0.1px;
+   height: 0.1px;
+   opacity: 0;
+   overflow: hidden;
+   position: absolute;
+   z-index: -1;
+   }
+
+label[for="foto"]{
+    transition: all .5s;
+    cursor: pointer;
+    color: color:#E8D8BE;
+    background-color: #3A3539;
+    border-radius: 10px;
+    display: flex;
+    width:20%;
+    height: 50px;
+    justify-content: center;
+    padding-top: 10px;
+    color:#E8D8BE;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: futurabook;
+    }
+
+
+
+
 /*BOTONES LOGIN Y REGISTRO*/
 .button{
+  border:none;
+    background-image:none;
+    background-color:transparent;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+.button button{
+  color: color:#E8D8BE;
   background-color: #3A3539;
   border-radius: 10px;
   display: flex;
   width:20%;
   height: 50px;
   justify-content: center;
-  padding-top: 12px;
+  padding-top: 4px;
+  color:#E8D8BE;
+  text-decoration: none;
+  font-size: 18px;
+  font-family: futurabook;
+
 }
 .button a{
   color:#E8D8BE;
@@ -351,12 +396,7 @@ img {
   font-size: 18px;
   font-family: futurabook;
 }
-/* Boton Registro */
-.button button{
-  color:#E8D8BE;
-  text-decoration: none;
-  font-size: 18px;
-  font-family: futurabook;
+
 }
 .FORGOTPASS a{
 font-family: futurabook;
@@ -378,11 +418,12 @@ text-decoration: underline;
 
 /*FAQ*/
 .container-fluid{
-  background-color: #E8D8BE
+  background-color: #E8D8BE;
+
 }
 #imagenFaq{
   display: flex;
-  width: 100%;
+  width: 100vw;
 }
 .container-fluid h2{
   padding-top: 60px;
@@ -467,5 +508,5 @@ footer .logo p{
     margin-bottom: 70px;
   }
 
- 
+
 }

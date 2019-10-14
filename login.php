@@ -78,8 +78,8 @@ include_once("nav.php");
               <label for="recordarme">Recordarme</label>
           </div>
           <br>
-          <div class="button ">
-            <input type="submit" value="Entrar" >
+          <div class="button">
+            <button type="submit">Entrar</button>
           </div>
           <br>
           <div class="FORGOTPASS">
@@ -120,4 +120,3 @@ include_once("nav.php");
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   </body>
 </html>
-

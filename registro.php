@@ -150,7 +150,7 @@ if ($_POST) {
            <span class="error" ><?=$errorMail?></span>
            <br>
            <div class="">
-             <label for="foto">Foto</label>
+             <label for="foto">FOTO</label>
              <input id="foto" type="file" name="foto" value="">
            </div>
            <span class="error"><?=$errorFoto?><?=$errorExtension?></span>
