@@ -18,7 +18,7 @@
         <section class="col-md-5  col-xs-12 row logo">
             <article class="col-12">
                 <a href="index.php"><h5>ROLLIN'</h5></a>
-                <a href="https://goo.gl/maps/x6Stu22dYpuu1bjT8" target="_blank"><p>Av. Lorem Ipsum Dolor 2563 - Winterfeld - Narnia</p></a>
+                <a href="contacto.php" target="_blank"><p>Av. Lorem Ipsum Dolor 2563 - Winterfeld - Narnia</p></a>
             </article>
         </section>
 
