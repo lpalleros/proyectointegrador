@@ -90,7 +90,7 @@ include_once("nav.php");
             </article>
 
             <article class="col-md-2 col-xs-12">
-                <a href="mailto:contacto@rollin.com"><h5>Contacto</h5></a>
+                <a href="contacto.php"><h5>Contacto</h5></a>
             </article>
         </section>
         <section class="col-md-5  col-xs-12 row logo">

@@ -16,7 +16,7 @@ $navItems =
   <nav class="navbar navbar-expand-md bg-dark navbar-dark navbar-toggleable-md ">
     <div class="container">
       <a class="navbar-brand" href="index.php">
-        <img src="IMAGENES/LOGO FONDO TRANSPARENTE.png" width="120px" id="logo">
+        <img src="imagenes/logo_fondo_transparente.png" width="120px" id="logo">
       </a>
       <button class="navbar-toggler navbar-toggler" type="button" data-toggle="collapse" data-target="#Content" aria-controls="Content" aria-expanded="false" aria-label="Toggle navigation" id="toggleButton">
         <span class="navbar-toggler-icon"></span>
@@ -45,7 +45,7 @@ $navItems =
           <?php endforeach ;?>
           <li class="nav-item">
             <a class="nav-link" href="#">
-              <img src="IMAGENES/VECTOR MOCHILA.png" width="30px" id="logo">
+              <img src="imagenes/vector_mochila.png" width="30px" id="logo">
             </a>
           </li>
 
