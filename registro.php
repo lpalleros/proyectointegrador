@@ -100,9 +100,9 @@ if ($_POST) {
     }
 
     //Redirigir
-    //if ($error == 0) {
-    //  header("Location:"
-// }
+    if ($error == 0) {
+      header("Location:login.php");
+ }
 
 
 }
@@ -130,37 +130,7 @@ if ($_POST) {
    </head>
    <body>
      <!-- NAVBAR  -->
-       <nav class="navbar navbar-expand-md bg-dark navbar-dark navbar-toggleable-md ">
-         <div class="container">
-           <a class="navbar-brand" href="index.html">
-             <img src="IMAGENES/LOGO FONDO TRANSPARENTE.png" width="120px" id="logo">
-           </a>
-           <button class="navbar-toggler navbar-toggler" type="button" data-toggle="collapse" data-target="#Content" aria-controls="Content" aria-expanded="false" aria-label="Toggle navigation" id="toggleButton">
-             <span class="navbar-toggler-icon"></span>
-           </button>
-           <div class="collapse navbar-collapse " id="Content" >
-             <ul class="nav navbar-nav ml-auto">
-               <li class="nav-item">
-                 <a class="nav-link" href="login.html">Entrar</a>
-               </li>
-               <li class="nav-item">
-                 <a class="nav-link" href="#">Registrarse</a>
-               </li>
-
-               <li class="nav-item">
-                 <a class="nav-link" href="faq.html" >FAQ</a>
-               </li>
-             </ul>
-             <ul class="nav navbar-nav ml-auto">
-               <li class="nav-item">
-                 <a class="nav-link" href="#">
-                   <img src="IMAGENES/VECTOR MOCHILA.png" width="30px" id="logo">
-                 </a>
-               </li>
-             </ul>
-           </div>
-         </div>
-       </nav>
+       <?php include_once("nav.php"); ?>
        <!-- FINAL DEL NAVBAR  -->
      <div class="row container-registro">
        <div class="col-lg-6 col-sm-12 registro">
@@ -169,17 +139,14 @@ if ($_POST) {
            <br>
            <label for="name">Nombre completo</label>
            <input id="name" type="text" name="name" value="<?=$nombre?>"placeholder="">
-           <br>
            <span class="error"><?=$errorNombre?></span>
            <br>
            <label for="user">Nombre de Usuario</label>
            <input id="user" type="text" name="user" value="<?=$user?>" placeholder="">
-           <br>
            <span class="error"><?=$errorUser?></span>
            <br>
            <label for="email">Email</label>
            <input id="email" type="email" name="email" value="<?=$email?>"placeholder="">
-           <br>
            <span class="error" ><?=$errorMail?></span>
            <br>
            <div class="">
@@ -190,7 +157,6 @@ if ($_POST) {
            <br>
            <label for="password">Clave</label>
            <input id="password" type="password" name="password" placeholder="">
-           <br>
            <span class="error"><?=$errorPassword?></span>
            <br>
            <label for="">Confirmar Clave</label>
