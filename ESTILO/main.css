@@ -1,22 +1,22 @@
 @font-face {
   font-family:futurabook;
-  src:url(../FUENTES/FuturaBookfont.ttf);
+  src:url(../fuentes/FuturaBookfont.ttf);
 }
 @font-face {
   font-family:futuraheavy;
-  src:url(../FUENTES/FuturaHeavyfont.ttf);
+  src:url(../fuentes/FuturaHeavyfont.ttf);
 }
 @font-face {
   font-family:futuramedium;
-  src:url(../FUENTES/futuramediumbt.ttf);
+  src:url(../fuentes/futuramediumbt.ttf);
 }
 @font-face {
   font-family:futuramediumc;
-  src:url(../FUENTES/futuramediumcondensedbt.ttf);
+  src:url(../fuentes/futuramediumcondensedbt.ttf);
 }
 @font-face {
   font-family:futuralightc;
-  src:url(../FUENTES/Futura-CondensedLight.otf);
+  src:url(../fuentes/Futura-CondensedLight.otf);
 }
 
 body {
@@ -54,9 +54,87 @@ header{
   _background-color: red;
 }
 
+
+/* CONTACTO */
+.portadaContacto{
+  background-image: url("../imagenes/contacto.png") ;
+  height: 90vh;
+  background-size: cover;
+  background-image: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  _margin-bottom: 50px;
+}
+
+.recuadroContacto{
+  background-color: rgba(232, 216, 190, 0.719);
+  text-align: center;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 30px;
+}
+
+.formulario-de-contacto {
+  width: 100%;
+  _height: 700px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 13.5px;
+  margin: 0 auto;
+  _max-height: 100vh;
+  color:#3A3539;
+}
+
+.recuadroContacto h5{
+  font-family: futuraheavy;
+  font-size: 30px;
+  _padding-top: 20px;
+  text-align: right
+}
+
+.recuadroContacto p{
+  font-family: futurabook!important;
+  font-size: 18px!important;
+  text-align: right!important;
+}
+
+.tel-contacto{
+  color:#EF3E3A;
+  font-family: futuralightc!important;
+  font-size: 36px!important;
+  text-align: right;
+  _padding-top: 60px;
+  _padding-bottom: 60px;
+}
+.button-contacto{
+  background-color: #3A3539;
+  border-radius: 10px;
+  display: flex;
+  _width:20%;
+  height: 50px;
+  justify-content: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.button-contacto a{
+  color:#E8D8BE;
+  text-decoration: none;
+  font-size: 18px;
+  font-family: futurabook;
+}
+.button-contacto input{
+  color:#E8D8BE;
+  font-size: 18px;
+  font-family: futurabook;
+  background: none;
+
+}
+
 /* HOME */
 .portadaHome{
-  background-image: url("../IMAGENES/HOME1.png") ;
+  background-image: url("../imagenes/home1.png") ;
   height: 90vh;
   background-size: cover;
   background-image: no-repeat;
@@ -65,6 +143,9 @@ header{
   align-items: center;
   margin-bottom: 50px;
 }
+
+
+
 .bienvenidaHome{
   background-color: rgba(255, 255, 255, 0.719);
   text-align: center;
@@ -128,7 +209,7 @@ header{
   _flex-wrap: wrap;
   _height: 400px;
   _background-color: white;
-  background-image: url("../IMAGENES/HOMECAJAPRODUCTOS.png");
+  background-image: url("../imagenes/home_caja_productos.png");
   background-size: cover;
   background-image: no-repeat;
 
@@ -141,7 +222,7 @@ header{
   margin-bottom: 50px;
   padding-top: 20px;
   padding-bottom: 20px;
-  background-image: url("../IMAGENES/NEWSLATER.png");
+  background-image: url("../imagenes/newslater.png");
   background-size: cover;
   background-image: no-repeat;
   _height: 200px;
@@ -184,7 +265,7 @@ header{
   background-color: #E8D8BE;
 }
 
-<<<<<<< Updated upstream:ESTILO/main.css
+<<<<<<< Updated upstream:estilo/main.css
 /* REGISTRO Fomulario*/
 =======
 footer{
@@ -226,8 +307,9 @@ h2{
 }
 label{
   font-family: futurabook;
+  text-align: left;
 }
-input{
+input, textarea{
     outline-style: none;
     border: none;
     border-bottom: 1px solid #EF3E3A;
@@ -243,7 +325,7 @@ input{
   max-width: 100%;
   height: 700px;
   max-height: 100vh;
-  background-image: url('../IMAGENES/REGISTRARSE.png');
+  background-image: url('../imagenes/registrarse.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -288,7 +370,7 @@ text-decoration: underline;
   max-width: 100%;
   height: 700px;
   max-height: 100vh;
-  background-image: url('../IMAGENES/ENTRAR.png');
+  background-image: url('../imagenes/entrar.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -373,4 +455,17 @@ footer .logo p{
   .formularioNews{
     margin-bottom: 30px;
   }
+
+  /* CONTACTO */
+  .portadaContacto{
+    height: auto;
+  }
+  .tel-contacto, .portadaContacto h5, .portadaContacto p{
+    text-align: center!important;
+  }
+  .portadaContacto article{
+    margin-bottom: 70px;
+  }
+
+ 
 }
