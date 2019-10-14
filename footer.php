@@ -8,7 +8,7 @@
                 </ul>
             </article>
             <article class="col-md-2 col-xs-12">
-                <a href="faq.html"><h5>Faq</h5></a> 
+                <a href="faq.php"><h5>Faq</h5></a> 
             </article>
 
             <article class="col-md-2 col-xs-12">
