@@ -122,7 +122,7 @@ if ($_POST) {
    <head>
      <meta charset="utf-8">
      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-     <link rel="stylesheet" href="ESTILO/main.css">
+     <link rel="stylesheet" href="estilo/main.css">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
 
@@ -130,7 +130,41 @@ if ($_POST) {
    </head>
    <body>
      <!-- NAVBAR  -->
+<<<<<<< Updated upstream
        <?php include_once("nav.php"); ?>
+=======
+       <nav class="navbar navbar-expand-md bg-dark navbar-dark navbar-toggleable-md ">
+         <div class="container">
+           <a class="navbar-brand" href="index.html">
+             <img src="imagenes/logo_fondo_transparente.png" width="120px" id="logo">
+           </a>
+           <button class="navbar-toggler navbar-toggler" type="button" data-toggle="collapse" data-target="#Content" aria-controls="Content" aria-expanded="false" aria-label="Toggle navigation" id="toggleButton">
+             <span class="navbar-toggler-icon"></span>
+           </button>
+           <div class="collapse navbar-collapse " id="Content" >
+             <ul class="nav navbar-nav ml-auto">
+               <li class="nav-item">
+                 <a class="nav-link" href="login.html">Entrar</a>
+               </li>
+               <li class="nav-item">
+                 <a class="nav-link" href="#">Registrarse</a>
+               </li>
+
+               <li class="nav-item">
+                 <a class="nav-link" href="faq.html" >FAQ</a>
+               </li>
+             </ul>
+             <ul class="nav navbar-nav ml-auto">
+               <li class="nav-item">
+                 <a class="nav-link" href="#">
+                   <img src="imagenes/vector_mochila.png" width="30px" id="logo">
+                 </a>
+               </li>
+             </ul>
+           </div>
+         </div>
+       </nav>
+>>>>>>> Stashed changes
        <!-- FINAL DEL NAVBAR  -->
      <div class="row container-registro">
        <div class="col-lg-6 col-sm-12 registro">
