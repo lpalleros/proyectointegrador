@@ -53,31 +53,8 @@ include_once("nav.php");
 
         </div>
 
-        <footer class="row">
-            <section class="col-md-7 col-xs-12  row listas">
-                <article class="col-md-2 col-xs-12">
-                    <a href="#"><h5>Tienda</h5></a>
-                    <ul>
-                        <li><a href="#">Monopatines</a></li>
-                        <li><a href="#">Accesorios</a></li>
-                    </ul>
-                </article>
-                <article class="col-md-2 col-xs-12">
-                    <a href="faq.html"><h5>Faq</h5></a>
-                </article>
+        <?php include_once("footer.php"); ?>
 
-                <article class="col-md-2 col-xs-12">
-                    <a href="mailto:contacto@rollin.com"><h5>Contacto</h5></a>
-                </article>
-            </section>
-            <section class="col-md-5  col-xs-12 row logo">
-                <article class="col-12">
-                    <a href="index.html"><h5>ROLLIN'</h5></a>
-                    <a href="https://goo.gl/maps/x6Stu22dYpuu1bjT8" target="_blank"><p>Av. Lorem Ipsum Dolor 2563 - Winterfeld - Narnia</p></a>
-                </article>
-            </section>
-
-        </footer>
     </div>
  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
