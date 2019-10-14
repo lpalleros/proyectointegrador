@@ -59,6 +59,7 @@ header{
 .portadaContacto{
   background-image: url("../imagenes/contacto.png") ;
   height: 90vh;
+  height: 800px;
   background-size: cover;
   background-image: no-repeat;
   display: flex;
@@ -77,7 +78,7 @@ header{
 
 .formulario-de-contacto {
   width: 100%;
-  _height: 700px;
+  _height: 1000px;
   display: flex;
   flex-direction: column;
   justify-content: center;
