@@ -1,8 +1,9 @@
 
 <?php
 session_start();
-setCookie("prueba","Hola");
-//setCookie("username","lucas");
+if(isset($_COOKIE["username"])){
+      $_SESSION["username"] = $_COOKIE["username"];
+}
 include_once("nav.php");
 
 ?>
