@@ -1,44 +1,79 @@
 <?php
 session_start();
 if(isset($_COOKIE["username"])){
-    echo "<h1>Hay una cookie guardada</h1>";
     $_SESSION["username"] = $_COOKIE["username"];
-    header("Location:index.php");
 }
 $email = "";
 $password = "";
+$mensajeDeErrorEmail = "";
+$mensajeDeErrorPassword = "";
+
+// pedido de archivo JSON para comparar usuarios y contraseñas
+
 $usuariosEnJSON = file_get_contents("usuarios.json");
 $usuarios = json_decode($usuariosEnJSON,true);
+
+// comienzo la validación de usuario una vez que envía el formulario por primera vez
+
 if($_POST){
-  // persistencia de los datos ingresados por el usuario.
+  // persistencia de los datos ingresados por el usuario en el formulario para su correción.
   $email = $_POST["email"];
   $password = $_POST["password"];
 
+
   // validaciones en caso de ingresar un campo vacio.
+
   if($_POST["email"] == "") {
     $error[0] = "alert alert-danger";
+    $mensajeDeErrorEmail = "Debes ingresar tu correo electrónico.";
   }
-  if ($_POST["password"] == "") {
+
+  // validacion en caso de colocar contraseña vacia.
+  if ($password == "" || strlen($password) < 4) {
     $error[1] = "alert alert-danger";
+    $mensajeDeErrorPassword = " Debes ingresar un constraseña";
   }
+
 
 
   // pido el correo que ingreso el usuario y lo guardo en la variable.
   $correoDelUsuario = $_POST["email"];
 
 
-  if($_POST["recordarme"] != null){
-      setCookie("username",$_POST["username"]);
+  if(isset($_POST["recordarme"])){
+      if ($_POST["recordarme"] != null) {
+        if(isset($_SESSION["username"])){
+            //echo "<h1>Hay una cookie guardada</h1>";
+            setCookie("username",$_SESSION["username"]);
+        }
+
+      }
     }
 // recorro el array desde el archivo json para buscar un usuario registrado.
   foreach ($usuarios as $usuario) {
-    if ($correoDelUsuario == $usuario["email"]) {
-      echo "<h2>Encontré un correo que coincide</h2>";
-      if (password_verify($_POST["password"],$usuario["password"])) {
-        $_SESSION["username"] = $usuario["nombre"];
-        header("Location:index.php");
+    if ($correoDelUsuario != null) {
+      if ($correoDelUsuario == $usuario["email"]) {
+        $error[0] = "alert alert-success";
+        $mensajeDeErrorEmail = "";
+        if (password_verify($_POST["password"],$usuario["password"])) {
+            $_SESSION["username"] = $usuario["nombre"];
+            if(isset($_POST["recordarme"])){
+                if ($_POST["recordarme"] != null) {
+                      setCookie("username",$_SESSION["username"]);
+                }
+            }
+            header("Location:index.php");
+            break;
+          }  else {
+            $error[1] = "alert alert-danger";
+            $mensajeDeErrorPassword = "Has ingresado una contraseña incorrecta.";
+            break;
+          }
       } else {
-        echo "<h2>La contraseña NO coincide con el usuario.</h2>";
+        $error[0] = "alert alert-danger";
+        $mensajeDeErrorEmail = "El usuario no está registrado.";
+        $password= "";
+        $mensajeDeErrorPassword = "";
 
       }
     }
@@ -69,9 +104,11 @@ include_once("nav.php");
           <br>
           <label for="email">Email</label>
           <input id="email" type="email" name="email" class="<?=$error[0]?>" value="<?=$email?>">
+          <span style="color:#721c24;"><?=$mensajeDeErrorEmail?></span>
           <br>
           <label for="password">Clave</label>
           <input id="password" type="password" name="password" class="<?=$error[1]?>" value="<?=$password?>">
+          <span style="color:#721c24;"><?=$mensajeDeErrorPassword?></span>
           <br>
           <div class="checkbox-recordarme">
               <input id="recordarme"type="checkbox" name="recordarme">
