@@ -8,7 +8,7 @@
                 </ul>
             </article>
             <article class="col-md-2 col-xs-12">
-                <a href="faq.php"><h5>Faq</h5></a> 
+                <a href="faq.php"><h5>Faq</h5></a>
             </article>
 
             <article class="col-md-2 col-xs-12">
@@ -17,7 +17,7 @@
         </section>
         <section class="col-md-5  col-xs-12 row logo">
             <article class="col-12">
-                <a href="index.html"><h5>ROLLIN'</h5></a>
+                <a href="index.php"><h5>ROLLIN'</h5></a>
                 <a href="https://goo.gl/maps/x6Stu22dYpuu1bjT8" target="_blank"><p>Av. Lorem Ipsum Dolor 2563 - Winterfeld - Narnia</p></a>
             </article>
         </section>
