@@ -1,15 +1,12 @@
 <?php
 //variables para Persistencia
-$user="";
-$nombre ="";
-$email = "";
+  $nombre ="";
+  $email = "";
+  $mensaje="";
 //Errores
-$errorNombre = "";
-$errorMail ="";
-$errorUser="";
-$errorPassword="";
-$errorFoto="";
-$errorExtension="";
+  $errorNombre = "";
+  $errorMail ="";
+  $errorMensaje="";
 //para sumar los errores tengo esta variable
 $error = 0;
 
@@ -18,9 +15,9 @@ if ($_POST) {
 
     if ($_POST) {
         //persistencia
-        $user= $_POST["user"];
         $nombre = $_POST["name"];
         $email = $_POST["email"];
+        $mensaje= $_POST["mensaje"];
         }
         //validacion
     if ($_POST) {
@@ -38,64 +35,30 @@ if ($_POST) {
         $error++;
       }
 
-      if($_POST["user"] == "") {
-        $errorUser = "Ingrese un Nombre de Usuario";
+      if($_POST["mensaje"] == "") {
+        $errorMensaje = "Por favor ingrese un mensaje";
         $error++;
       }
 
-      else if (strlen($_POST["user"]) < 4) {
-        $errorUser = "El usuario debe tener al menos 4 caracteres";
-        $error++;
-      }
-
-      if ($_POST["password"] == "" || $_POST["password_confirm"] == "" ) {
-        $errorPasword = "Debe completar este Campo";
-        $error++;
-      }
-      else if ($_POST["password"] != $_POST["password_confirm"]) {
-        $errorPassword = "Las contraseñias tienen que ser iguales";
-        $error++;
-      }
-      else{ $pass = password_hash($_POST["password"], PASSWORD_DEFAULT);
-      }
     }
-    //VALIDACION FOTO y Subida
-    if ($_FILES) {
-      if ($_FILES["foto"]["error"]!= 0) {
-        $errorFoto = "Hubo un error al cargar la Foto";
-        $error++;
-      }
-      else {
-        $ext = pathinfo($_FILES["foto"]["name"],PATHINFO_EXTENSION);
-
-        if($ext!= "jpg" && $ext != "jpeg" && !$ext != "png"){
-          $errorExtension = "El formato de la Foto debe ser PNG, JPEG o JPG";
-          $error++;
-        }
-        else {
-          move_uploaded_file($_FILES["foto"]["tmp_name"],"archivos/".$_POST["name"].".".$ext);
-        }
-      }
-    }
-        //CReacion de usuario nuevo
+    //Creación de Nuevo Mensaje
     if ($error == 0) {
-      $usuarioNuevo = [
+      $mensajeNuevo = [
         "nombre" => $_POST["name"],
-        "usuario"=> $_POST["user"],
         "email"=> $_POST["email"],
-        "password"=> $pass
+        "mensaje"=> $_POST["mensaje"],
       ];
-      var_dump($usuarioNuevo);
-  //CARGA DE USUARIO NUEVO EN JASON
-      $archivos = file_get_contents("usuarios.json");
+      var_dump($mensajeNuevo);
+      //CARGA DE MENSAJE NUEVO EN JASON
+      $archivos = file_get_contents("mensajes.json");
 
-      $usuarios = json_decode($archivos, true);
+      $mensajes = json_decode($archivos, true);
 
-      $usuarios[]=$usuarioNuevo;
+      $mensajes[]=$mensajeNuevo;
 
-      $jsonfinal = json_encode($usuarios);
+      $jsonfinal = json_encode($mensajes);
 
-      file_put_contents("usuarios.json",$jsonfinal);
+      file_put_contents("mensajes.json",$jsonfinal);
     }
 
     //Redirigir
@@ -187,11 +150,10 @@ if ($_POST) {
                     <br>
                     <span class="error" ><?=$errorMail?></span>
                     <br>
-                    <label for="email">Mensaje</label>
-                    <textarea name="mensaje" id="" cols="30" rows="10"></textarea>
-                    <!-- <input id="email" type="email" name="email" value="<?=$email?>"placeholder=""> -->
+                    <label for="mensaje">Mensaje</label>
+                    <textarea name="mensaje" id="mensaje" cols="30" rows="10"value="<?=$mensaje?>"></textarea>
                     <br>
-                    <span class="error" ><?=$errorMail?></span>
+                    <span class="error" ><?=$errorMensaje?></span>
                     <br>
                     <div class="button-contacto col-md-4 col-xs-10">
                       <input type="submit" name="" value="ENVIAR">
