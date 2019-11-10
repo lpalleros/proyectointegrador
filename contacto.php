@@ -93,7 +93,7 @@ if ($_POST) {
 </head>
 <body>
   <!-- NAVBAR  -->
-    <?php include_once("nav.php"); ?>
+    <?php require_once("nav.php"); ?>
     <!-- FINAL DEL NAVBAR  -->
 
     <div class="container-fluid">
@@ -138,7 +138,7 @@ if ($_POST) {
         </div>
 
 
-<?php include_once("footer.php"); ?>
+<?php require_once("footer.php"); ?>
 </div>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

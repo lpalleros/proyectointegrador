@@ -4,7 +4,7 @@ session_start();
 if(isset($_COOKIE["username"])){
       $_SESSION["username"] = $_COOKIE["username"];
 }
-include_once("nav.php");
+require_once("nav.php");
 
 ?>
 <!DOCTYPE html>
@@ -76,7 +76,7 @@ include_once("nav.php");
             </section>
         </div>
 
-        <?php include_once("footer.php"); ?>
+        <?php require_once("footer.php"); ?>
     
 </div>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
