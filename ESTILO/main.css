@@ -19,7 +19,7 @@
   src:url(../fuentes/Futura-CondensedLight.otf);
 }
 
-body {
+body {
 background-color:   #e8d8be;
 margin: 0;
 padding: 0;
@@ -255,7 +255,6 @@ header{
 }
 
 .container-registro {
-<<<<<<< HEAD:main.css
     background-color: #E8D8BE;
 
 
@@ -266,9 +265,8 @@ header{
   background-color: #E8D8BE;
 }
 
-<<<<<<< Updated upstream:estilo/main.css
+
 /* REGISTRO Fomulario*/
-=======
 footer{
   padding-top: 20px;
   background-color: #3A3539;
@@ -347,11 +345,10 @@ img {
    z-index: -1;
    }
 
-label[for="foto"]{
+.BOTONROJO{
     transition: all .5s;
     cursor: pointer;
-    color: color:#E8D8BE;
-    background-color: #3A3539;
+    background-color: #EF3E3A;
     border-radius: 10px;
     display: flex;
     width:20%;
@@ -362,7 +359,12 @@ label[for="foto"]{
     text-decoration: none;
     font-size: 18px;
     font-family: futurabook;
+    text-decoration:none;
     }
+
+  .BOTONROJO a{
+    text-decoration:none;
+  }  
 
 
 
@@ -377,7 +379,6 @@ label[for="foto"]{
     box-shadow: none;
 }
 .button button{
-  color: color:#E8D8BE;
   background-color: #3A3539;
   border-radius: 10px;
   display: flex;
@@ -398,7 +399,7 @@ label[for="foto"]{
   font-family: futurabook;
 }
 
-}
+
 .FORGOTPASS a{
 font-family: futurabook;
 color: #3A3539;
@@ -509,5 +510,16 @@ footer .logo p{
     margin-bottom: 70px;
   }
 
+.perfil1{
+  display: inline-flex;
+  width:100%;
+  flex-wrap: wrap;
+  background-color: #3A3539;
+  color: #E8D8BE;
+}
+
+.perfil img{
+  width:20px;
+}
 
 }
