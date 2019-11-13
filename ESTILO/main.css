@@ -479,6 +479,21 @@ footer .logo p{
   text-align: right;
 }
 
+/*INICIO - PERFIL */
+
+  .perfil1{
+    display: inline-flex;
+    width:100%;
+    flex-wrap: wrap;
+    background-color: #3A3539;
+    color: #E8D8BE;
+  }
+
+  .perfil img{
+    width:20px;
+  }
+
+/* FIN - PERFIL */
 
 @media (max-width: 768px) {
   footer h5, footer .logo p, footer .logo h5, footer .listas ul li, footer a{
@@ -510,16 +525,6 @@ footer .logo p{
     margin-bottom: 70px;
   }
 
-.perfil1{
-  display: inline-flex;
-  width:100%;
-  flex-wrap: wrap;
-  background-color: #3A3539;
-  color: #E8D8BE;
-}
 
-.perfil img{
-  width:20px;
-}
 
 }
