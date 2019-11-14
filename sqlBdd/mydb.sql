@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.9.0.1
+-- version 4.9.1
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 14-11-2019 a las 02:54:15
--- Versión del servidor: 10.4.6-MariaDB
--- Versión de PHP: 7.3.8
+-- Tiempo de generación: 14-11-2019 a las 16:27:18
+-- Versión del servidor: 10.4.8-MariaDB
+-- Versión de PHP: 7.3.10
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -31,20 +31,20 @@ SET time_zone = "+00:00";
 CREATE TABLE `usuarios` (
   `id` int(11) NOT NULL,
   `nombre` varchar(200) NOT NULL,
-  `apellido` varchar(200) NOT NULL,
-  `contrasenia` varchar(200) NOT NULL,
+  `usuario` varchar(200) NOT NULL,
   `email` varchar(200) NOT NULL,
-  `imagen` varchar(200) DEFAULT NULL
+  `password` varchar(200) NOT NULL,
+  `imagen` varchar(200) NOT NULL DEFAULT 'NULL'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
 -- Volcado de datos para la tabla `usuarios`
 --
 
-INSERT INTO `usuarios` (`id`, `nombre`, `apellido`, `contrasenia`, `email`, `imagen`) VALUES
-(1, 'Gabriel', 'Tomasiello', '123456', 'gaby.cisco@gmail.com', ''),
-(2, 'Juan', 'Perez', '123456', 'jperez@gmail.com', ''),
-(3, 'Rosa', 'Melano', '123456', 'rmelano@gmail.com', '');
+INSERT INTO `usuarios` (`id`, `nombre`, `usuario`, `email`, `password`, `imagen`) VALUES
+(1, 'Gabriel', 'Tomasiello', 'gaby.cisco@gmail.com', '123456', ''),
+(2, 'Juan', 'Perez', 'jperez@gmail.com', '123456', ''),
+(3, 'Rosa', 'Melano', 'rmelano@gmail.com', '123456', '');
 
 --
 -- Índices para tablas volcadas
