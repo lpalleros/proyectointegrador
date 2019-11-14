@@ -482,15 +482,34 @@ footer .logo p{
 /*INICIO - PERFIL */
 
   .perfil{
-    display: inline-flex;
-    justify-content: left;
-    width:100%;
+    _display: inline-flex;
+    justify-content: center;
+    _width:100%;
     background-color: #3A3539;
     color: #E8D8BE;
-    padding-right: 50px;
-    padding-top: 50px;
+    _padding-right: 50px;
+    _padding-top: 50px;
+    margin: 5px;
+    border-radius: 10px;
+
 
   }
+
+  .contenedorPerfil{
+    background-color: #3A3539;
+    color: #E8D8BE;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    border-radius: 10px;
+    padding-top: 30px;
+    padding-bottom: 45px;
+    padding-left: 30px;
+    padding-right: 30px;
+    
+  }
+
+  
+  
 
   .perfil1 {
    display: inline-flex; 
@@ -501,17 +520,42 @@ footer .logo p{
 
   }
 
-  #botonPerfil{
+  .botonPerfil{
     display: inline-flex;
     flex-direction: row;
   }
 
-  .perfil img{
+  /* .perfil img{
     width:200px;
     padding-bottom: 20px;
+  } */
+
+  .contenedorImagenPerfil{
+    align-items: flex-end;
+  }
+  .contenedorImagenPerfil1{
+    text-align: center;
   }
 
+  .contenedorImagenPerfil2{
+    text-align: center;
+    margin-top: 35px;
+  }
+  
+  #botonEliminarCuenta{
+    display: none;
+  }
 
+  .titPerfil{
+    color: #E8D8BE;
+    _text-align: center;
+    font-size: 3em;
+    font-family: futuralightc;
+    text-decoration: none;
+    text-shadow: 2px 2px 2px #EF3E3A;
+    margin-top: 50px;
+    padding-left: 15px;
+  }
 /* FIN - PERFIL */
 
 @media (max-width: 768px) {
@@ -542,6 +586,16 @@ footer .logo p{
   }
   .portadaContacto article{
     margin-bottom: 70px;
+  }
+
+  .titPerfil{
+    color: #E8D8BE;
+    font-size: 3em;
+    font-family: futuralightc;
+    text-decoration: none;
+    text-shadow: 2px 2px 2px #EF3E3A;
+    margin-top: 50px;
+    text-align: center;
   }
 
 
