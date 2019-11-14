@@ -350,8 +350,8 @@ img {
     cursor: pointer;
     background-color: #EF3E3A;
     border-radius: 10px;
-    display: flex;
-    width:20%;
+    display: inline-flex;
+    width:150px;
     height: 50px;
     justify-content: center;
     padding-top: 10px;
@@ -481,17 +481,36 @@ footer .logo p{
 
 /*INICIO - PERFIL */
 
-  .perfil1{
+  .perfil{
     display: inline-flex;
+    justify-content: left;
     width:100%;
-    flex-wrap: wrap;
     background-color: #3A3539;
     color: #E8D8BE;
+    padding-right: 50px;
+    padding-top: 50px;
+
+  }
+
+  .perfil1 {
+   display: inline-flex; 
+   flex-direction: column; 
+   margin-right: 50px;
+   padding-top: 100px;
+   padding-bottom: 50px;
+
+  }
+
+  #botonPerfil{
+    display: inline-flex;
+    flex-direction: row;
   }
 
   .perfil img{
-    width:20px;
+    width:200px;
+    padding-bottom: 20px;
   }
+
 
 /* FIN - PERFIL */
 
